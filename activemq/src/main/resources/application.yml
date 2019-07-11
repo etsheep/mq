@@ -1,0 +1,10 @@
+spring:
+  activemq:
+    #ActiveMQ通讯地址
+    #vm://localhost  虚拟机内通信协议，如果客户端和broker在一个虚拟机内的话，通过VM协议通讯在VM内通讯，从而减少网络传输的开销。简化开发流程
+    broker-url: tcp://localhost:61616
+    #是否启用内存模式（就是不安装MQ，项目启动时同时启动一个MQ实例）
+    in-memory: false
+  jms:
+    #是否使用订阅模式
+    pub-sub-domain: false
