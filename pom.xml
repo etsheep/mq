@@ -11,6 +11,8 @@
     <modules>
         <module>activemq</module>
         <module>rabbitmq</module>
+        <module>rocketmq</module>
+        <module>kafka</module>
     </modules>
 
 
@@ -22,9 +24,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.rabbitmq</groupId>
-            <artifactId>amqp-client</artifactId>
-            <version>5.7.2</version>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 </project>
